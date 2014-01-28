@@ -1,0 +1,48 @@
+table {
+  width: 100%;
+
+  th,
+  td {
+    .padding(all, 1/4);
+    border-bottom: 1px solid;
+  }
+
+  thead th {
+    text-align: left;
+    vertical-align: bottom;
+    border-bottom-width: 2px;
+  }
+
+  tbody {
+    th {
+      text-align: right;
+      border-right: 1px solid;
+    }
+    th,
+    td {
+      vertical-align: top;
+    }
+
+    tr:last-child {
+      th,
+      td {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+.table--condensed {
+  th,
+  td {
+    .padding(all, 1/8);
+  }
+}
+
+.table--zebra {
+  tbody {
+    tr:nth-child(even) td {
+      background-color: @table-background-colour;
+    }
+  }
+}

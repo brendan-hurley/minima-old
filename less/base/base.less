@@ -1,0 +1,32 @@
+// http://paulirish.com/2012/box-sizing-border-box-ftw/
+* {
+  .box-sizing(border-box);
+}
+
+html {
+  font-size: @base-font-size + 0px;
+}
+body {
+  .line-height(@base-font-size);
+
+	color: @base-font-colour;
+  font-size: @base-font-size + 0px;
+  font-family: @base-font-family;
+	-webkit-font-smoothing: antialiased;
+
+	&.cke_editable {
+		.padding(all, 1/2);
+
+		background: #fff;
+	}
+}
+
+hgroup,
+ul, ol, dl,
+blockquote, p, address,
+table,
+fieldset, figure,
+pre {
+	.margin(bottom);
+	margin-top: 0;
+}

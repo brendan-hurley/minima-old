@@ -1,0 +1,62 @@
+.width-setup(@namespace: ~"") {
+  // Whole
+  .@{namespace}one-whole         { width: 100%; *width: 98% - (0.5 / 600 * 100%); }
+
+  // Halves
+  .@{namespace}one-half,
+  .@{namespace}two-quarters,
+  .@{namespace}three-sixths,
+  .@{namespace}four-eighths,
+  .@{namespace}five-tenths,
+  .@{namespace}six-twelfths      { width: 50%; *width: 48% - (0.5 / 600 * 100%); }
+
+  // Thirds
+  .@{namespace}one-third,
+  .@{namespace}two-sixths,
+  .@{namespace}four-twelfths     { width: 33.333%; *width: 31.333% - (0.5 / 600 * 100%); }
+  .@{namespace}two-thirds,
+  .@{namespace}four-sixths,
+  .@{namespace}eight-twelfths    { width: 66.666%; *width: 64.666% - (0.5 / 600 * 100%); }
+
+  // Quarters
+  .@{namespace}one-quarter,
+  .@{namespace}two-eighths,
+  .@{namespace}three-twelfths    { width: 25%; *width: 23% - (0.5 / 600 * 100%); }
+  .@{namespace}three-quarters,
+  .@{namespace}six-eighths,
+  .@{namespace}nine-twelfths     { width: 75%; *width: 73% - (0.5 / 600 * 100%); }
+
+  // Fifths
+  .@{namespace}one-fifth,
+  .@{namespace}two-tenths        { width: 20%; *width: 18% - (0.5 / 600 * 100%); }
+  .@{namespace}two-fifths,
+  .@{namespace}four-tenths       { width: 40%; *width: 38% - (0.5 / 600 * 100%); }
+  .@{namespace}three-fifths,
+  .@{namespace}six-tenths        { width: 60%; *width: 58% - (0.5 / 600 * 100%); }
+  .@{namespace}four-fifths,
+  .@{namespace}eight-tenths      { width: 80%; *width: 78% - (0.5 / 600 * 100%); }
+
+  // Sixths
+  .@{namespace}one-sixth,
+  .@{namespace}two-twelfths      { width: 16.666%; *width: 14.666% - (0.5 / 600 * 100%); }
+  .@{namespace}five-sixths,
+  .@{namespace}ten-twelfths      { width: 83.333%; *width: 81.333% - (0.5 / 600 * 100%); }
+
+  // Eighths
+  .@{namespace}one-eighth        { width: 12.5%; *width: 10.5% - (0.5 / 600 * 100%); }
+  .@{namespace}three-eighths     { width: 37.5%; *width: 35.5% - (0.5 / 600 * 100%); }
+  .@{namespace}five-eighths      { width: 62.5%; *width: 60.5% - (0.5 / 600 * 100%); }
+  .@{namespace}seven-eighths     { width: 87.5%; *width: 85.5% - (0.5 / 600 * 100%); }
+
+  // Tenths
+  .@{namespace}one-tenth         { width: 10%; *width: 8% - (0.5 / 600 * 100%); }
+  .@{namespace}three-tenths      { width: 30%; *width: 28% - (0.5 / 600 * 100%); }
+  .@{namespace}seven-tenths      { width: 70%; *width: 68% - (0.5 / 600 * 100%); }
+  .@{namespace}nine-tenths       { width: 90%; *width: 88% - (0.5 / 600 * 100%); }
+
+  // Twelfths
+  .@{namespace}one-twelfth       { width: 8.333%; *width: 6.333% - (0.5 / 600 * 100%); }
+  .@{namespace}five-twelfths     { width: 41.666%; *width: 39.666% - (0.5 / 600 * 100%); }
+  .@{namespace}seven-twelfths    { width: 58.333%; *width: 56.333% - (0.5 / 600 * 100%); }
+  .@{namespace}eleven-twelfths   { width: 91.666%; *width: 89.666% - (0.5 / 600 * 100%); }
+}

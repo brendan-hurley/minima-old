@@ -1,0 +1,27 @@
+.accordion {
+  .margin(bottom);
+}
+
+.accordion__item {}
+
+.accordion__heading {
+  .is-active & {
+    a {
+      cursor: default;
+    }
+  }
+}
+
+.accordion__body {
+  html.js & {
+    display: none;
+  }
+
+  .accordion__item.is-active & {
+    display: block;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}

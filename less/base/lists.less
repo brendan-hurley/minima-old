@@ -1,0 +1,53 @@
+ol {
+  list-style: decimal;
+
+  > li > ol {
+    list-style: lower-alpha;
+
+    > li > ol {
+      list-style: lower-roman;
+    }
+  }
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+.list--inline {
+  list-style: none;
+  padding-left: 0;
+
+  > li {
+    .inline-block();
+    .margin(right, 1/2);
+
+    vertical-align: middle;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.list--circle {
+  list-style: circle;
+}
+.list--disc {
+  list-style: disc;
+}
+.list--square {
+  list-style: square;
+}
+.list--decimal {
+  list-style: decimal;
+}
+.list--alpha {
+  list-style: lower-alpha;
+}
+.list--roman {
+  list-style: lower-roman;
+}

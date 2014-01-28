@@ -1,0 +1,21 @@
+.tabset {
+  .margin(bottom);
+}
+
+.tabset__nav {}
+
+.tabset__content {}
+
+.tabset__pane {
+  html.js & {
+    display: none;
+
+    &:first-child {
+      display: block;
+    }
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
