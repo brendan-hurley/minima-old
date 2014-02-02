@@ -1,5 +1,5 @@
 Package.describe({
-  summary: "Minima theme, package.js provides core theme files for Meteor powered applications."
+  summary: "Minima theme, a simple base theme."
 });
 
 Package.on_use(function (api) {
