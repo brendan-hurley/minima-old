@@ -1,7 +1,7 @@
 (function($) {
+  $(document).ready(function() {
+    $('html').addClass('js');
 
-Drupal.behaviors.minima = {
-  attach: function (context, settings) {
     //
     // Tabsets.
     //
@@ -56,7 +56,5 @@ Drupal.behaviors.minima = {
       // Open the first item in each accordion.
       $(this).children(':first').addClass('is-active');
     });
-  }
-};
-
+  });
 })(jQuery);

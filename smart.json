@@ -1,0 +1,11 @@
+{
+  "name": "Minima",
+  "description": "A lightweight base theme tailored for Meteor apps",
+  "homepage": "https://bitbucket.org/greeneking/minima/",
+  "author": "Oliver Nevard & Tom Cant",
+  "version": "1.0.2",
+  "git": "git@bitbucket.org:greeneking/minima.git",
+  "packages": {
+    "minima": "0.1.1"
+  }
+}
